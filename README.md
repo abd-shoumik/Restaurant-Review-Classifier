@@ -37,20 +37,20 @@
  For this purpose we need `CountVectorizer` class from `sklearn.feature_extraction.text`.
 
 ### **Splitting Dataset into training set and test set**
- Splitting Corpus into Training and Test set. For this, we need class `train_test_split` from `sklearn.model_selection`. Split can be made 70/30 or 80/20 or 85/15 or 75/25, here I choose 75/25 via “test_size”.
+* Splitting Corpus into Training and Test set. For this, we need class `train_test_split` from `sklearn.model_selection`. Split can be made 70/30 or 80/20 or 85/15 or 75/25, here I choose 75/25 via “test_size”.
  
 ### **Fitting to a predictive model**
-  1. Here I used `NaiveBayesClassifier` as I got best accuracy out of it.
+  * Here I used `NaiveBayesClassifier` as I got best accuracy out of it.
   Fit the model via `.fit()` method with attributes X_train and y_train.
 
 ### **Predicting final result**
  - `y_pred = model.predict(X_test)` 
 
 ### **Accuracy Measurement:**
-I used the naivebayes classifier which gave me an accuracy of **_73 percent_**.There are 1000 reviews in the dataset.If you can train it  with bigger dataset and do parameter tuning ,this accuracy will improve.
+* I used the naivebayes classifier which gave me an accuracy of **_73 percent_**.There are 1000 reviews in the dataset.If you can train it  with bigger dataset and do parameter tuning ,this accuracy will improve.
 
 ## **Deploying it in heroku:**
-  In **_review_app.py_** I have taken pickled data from `text_transform.pkl` and `nlp_review_classifier.pkl` 
+ * In **_review_app.py_** I have taken pickled data from `text_transform.pkl` and `nlp_review_classifier.pkl` 
 and created the path of rendering `home.html` & `result.html` template.
 
 **Then, I have deployed it in heroku platform using this github repository which you can visit at
