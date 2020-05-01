@@ -17,10 +17,9 @@
 ## Steps Description
 
 * **Importing the libraries and dataset**
-- Import numpy,pandas and matplotlib
-- Import the dataset Restaurant_Reviews.tsv in your editor.**We  are using _.tsv_ file **here as we want to seprate the words by spaces. 
- We always use .csv(comma seperated value) file as our dataset. But comma can appear in reviews ,as a result we can get error in
- separating columns if we use comma as delimiter.So,we use tab for sepation that's why we will import .tsv
+- Import `numpy`,`pandas` and `matplotlib`
+- Import the dataset Restaurant_Reviews.tsv in your editor.We  are using `.tsv` file here as we want to seprate the words by spaces. 
+ We always use `.csv(comma seperated value)` file as our dataset. But comma can appear in reviews ,as a result we can get error in separating columns if we use comma as delimiter.So,we use tab for sepation that's why we will import `.tsv`
  
 * **Text cleaning or pre-processing**
 - Remove Punctuations, Numbers: Punctuations, Numbers doesn’t help much in processong the given text, if included, they will just 
@@ -40,19 +39,17 @@
 For this purpose we need `CountVectorizer` class from `sklearn.feature_extraction.text`.
 
 * **Splitting Dataset into training set and test set**
- Splitting Corpus into Training and Test set. For this, we need class `train_test_split` from `sklearn.model_selection`. Split can be
- made 70/30 or 80/20 or 85/15 or 75/25, here I choose 75/25 via “test_size”.
+ Splitting Corpus into Training and Test set. For this, we need class `train_test_split` from `sklearn.model_selection`. Split can be made 70/30 or 80/20 or 85/15 or 75/25, here I choose 75/25 via “test_size”.
  
 * **Fitting to a predictive model**
  - Here I used `NaiveBayesClassifier` as I got best accuracy out of it.
- Fit the model via .fit() method with attributes X_train and y_train.
+ Fit the model via `.fit()` method with attributes X_train and y_train.
 
 * **Predicting final result**
- y_pred = model.predict(X_test) 
+ `y_pred = model.predict(X_test)` 
 
 * **Accuracy Measurement**
-I used the naivebayes classifier which gave me an accuracy of 73 percent.There are 1000 reviews in the dataset.If you can train it 
-bigger dataset and do parametre tuning ,this accuracy will improve.
+I used the naivebayes classifier which gave me an accuracy of **_73 percent_**.There are 1000 reviews in the dataset.If you can train it  with bigger dataset and do parameter tuning ,this accuracy will improve.
 
 * **Deploying it in heroku**
 -  In **_review_app.py_** I have taken pickled data from `text_transform.pkl` and `nlp_review_classifier.pkl` 
