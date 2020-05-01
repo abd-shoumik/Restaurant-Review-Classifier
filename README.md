@@ -17,7 +17,7 @@
 ## Steps Description
 
 ### **Importing the libraries and dataset**
-1. Import `numpy`,`pandas` and `matplotlib`
+1. Import `numpy`,`pandas` and `matplotlib.pylot`
 2. Import the dataset Restaurant_Reviews.tsv in your editor.We  are using `.tsv` file here as we want to seprate the words by spaces. We always use `.csv(comma seperated value)` file as our dataset. But comma can appear in reviews ,as a result we can get error in separating columns if we use comma as delimiter.So,we use tab for sepation that's why we will import `.tsv`
  
 ### **Text cleaning or pre-processing**
@@ -26,7 +26,7 @@
  3. Convert each word into its lower case: For example, it useless to have same words in different cases (eg ‘good’ and ‘GOOD’).
 
 ### **Tokenization**
- Tokenization, involves splitting sentences and words from the body of the text.
+ * Tokenization, involves splitting sentences and words from the body of the text.
  
 ### **Creating bag of words model** 
  1. Take all the different words of reviews in the dataset without repeating of words.
