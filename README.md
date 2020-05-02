@@ -54,7 +54,7 @@
 and created the path of rendering `home.html` & `result.html` template.
 
 **Then, I have deployed it in heroku platform using this github repository which you can visit at
-[restaurantreviewclassifier](https://restaurantrreviewclassifier.herokuapp.com/)**
+[restaurantreviewclassifier](https://restaurantreviewclassifier.herokuapp.com/)**
 
 *** If you want to deploy this in your heroku account,make sure you have all the files uploded in this git repo in your
 github repository ***
