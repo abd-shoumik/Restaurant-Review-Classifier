@@ -2,6 +2,7 @@
 
 **This is a simple NLP project based on the
 [NLP section of A-Z Machine Learning Course on Udemy](https://www.udemy.com/course/machinelearning/learn)**
+- Find **Github Pages** of this repository at https://abd-shoumik.github.io/Restaurant-Review-Classifier/
 
 ## Steps I folllowed:
 * Importing the libraries and dataset
